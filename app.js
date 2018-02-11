@@ -22,7 +22,7 @@ var app = express();
 const PORT = process.env.PORT || 5000;
 // Connect to mongoose
 
-mongoose.connect("mongodb://psk:root@ds231588.mlab.com:31588/vidjot-prod")
+mongoose.connect(db.mongoURI)
     .then(() => console.log("MongoDB Connected."))
     .catch(err => console.log('err', err))
 
