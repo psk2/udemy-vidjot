@@ -96,6 +96,8 @@ app.get('/about', (req, res, next) => {
 
 // Idea Routes.
 app.use('/ideas', ideasRoutes)
+
+// User Routes
 app.use('/users', userRoutes)
 
 
