@@ -3,16 +3,16 @@ const Schema = mongoose.Schema;
 
 // create Schema
 
-const IdeaSchema = new Schema({
-    title:{
+const UserSchema = new Schema({
+    name:{
         type:String,
         required:true
     },
-    details:{
+    email:{
         type:String,
         required:true
     },
-    user:{
+    password:{
         type:String,
         required:true
     },
@@ -22,4 +22,4 @@ const IdeaSchema = new Schema({
     }
 });
 
-mongoose.model("ideas",IdeaSchema)
+mongoose.model("users",UserSchema)
